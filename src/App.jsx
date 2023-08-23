@@ -11,21 +11,25 @@ import LinearScale from './components/LinearScale';
 import MultiChoiceGrid from './components/MultiChoiceGrid';
 import TickBoxGrid from './components/TickBoxGrid';
 import Footer from './components/Footer';
+import { ThemeProvider } from '@mui/material';
+import Theme from './components/ThemeProvider';
 
 const App = () => {
   return (
     <div className='app'>
-      <Header />
-      <MCQ />
-      <CheckBox />
-      <ShortAnswer />
-      <ParaGraph />
-      <Dropdown />
-      <FileUpload />
-      <LinearScale />
-      <MultiChoiceGrid />
-      <TickBoxGrid />
-      <Footer />
+      <ThemeProvider theme={Theme}>
+        <Header />
+        <MCQ />
+        <CheckBox />
+        <ShortAnswer />
+        <ParaGraph />
+        <Dropdown />
+        <FileUpload />
+        <LinearScale />
+        <MultiChoiceGrid />
+        <TickBoxGrid />
+        <Footer />
+      </ThemeProvider>
     </div>
   );
 };
