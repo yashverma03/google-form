@@ -7,21 +7,22 @@
 
 .dropdown-title {
   font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .dropdown-required {
   color: red;
 }
 
-.dropdown-label {
-  font-size: 16px;
-  align-items: right;
-  text-align: right;
-}
-
 .dropdown-select {
-  width: 300px;
+  width: 200px;
   margin-top: 20px;
   border: 1px solid white;
   border-radius: 10px;
+}
+
+.dropdown-choose {
+  color: rgba(0, 0, 0, .54);
+  margin: -4px 3px;
+  padding: 5px;
 }
