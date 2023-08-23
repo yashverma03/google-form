@@ -4,6 +4,7 @@ import './styles/FileUpload.css';
 import FileUploadOutlinedIcon from '@mui/icons-material/FileUploadOutlined';
 
 const buttonStyle = {
+  color: '#1a73e8',
   fontWeight: 'bold',
   textTransform: 'none'
 };

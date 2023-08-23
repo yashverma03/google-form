@@ -4,7 +4,7 @@ import './styles/Footer.css';
 
 const Footer = () => {
   const buttonStyle = {
-    backgroundColor: '#9003fc',
+    backgroundColor: 'rgb(103, 58, 183)',
     textTransform: 'none'
   };
 

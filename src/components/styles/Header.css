@@ -33,23 +33,23 @@
 }
 
 .header-email {
-  color: rgb(108, 106, 106);
+  color: #5f6368;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
 .header-switch-account {
-  color: #1a7be2;
+  color: #1a73e8;
   font-weight: 400;
 }
 
 .header-cloud-icon {
-  color: rgb(108, 106, 106);
+  color: #5f6368;
 }
 
 .header-description {
   margin-top: 10px;
-  color: rgb(103, 102, 102);
+  color: #5f6368;
 }
 
 .header-required {

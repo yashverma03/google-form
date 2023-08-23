@@ -32,8 +32,8 @@
 .multi-choice-grid-row {
   display: flex;
   margin-top: 10px;
-  border: 1px solid #ccc;
-  background-color: rgb(245, 243, 243);
+  border: 1px #ccc;
+  background-color: #f8f9fa;
   border-radius: 5px;
 }
 
