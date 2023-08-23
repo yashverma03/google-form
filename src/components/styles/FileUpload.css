@@ -15,6 +15,16 @@
 }
 
 .file-upload-button {
-  margin-top: 10px;
-  width: 120px;
+  width: 130px;
+  height: 40px;
+  margin: -200px;
+}
+
+.file-upload-content {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload-content p {
+  margin-left: 5px;
 }

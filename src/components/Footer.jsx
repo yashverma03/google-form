@@ -3,7 +3,10 @@ import React from 'react';
 import './styles/Footer.css';
 
 const Footer = () => {
-  const buttonStyle = { backgroundColor: '#9003fc' };
+  const buttonStyle = {
+    backgroundColor: '#9003fc',
+    textTransform: 'none'
+  };
 
   return (
     <div className='footer-container'>
@@ -13,6 +16,9 @@ const Footer = () => {
         </div>
 
         <div className='footer-page-info'>
+          <div className='footer-progress-bar'>
+            <div className='footer-progress-fill'></div>
+          </div>
           <p>Page 1 of 1</p>
         </div>
 
@@ -29,9 +35,9 @@ const Footer = () => {
       <div className='footer-legal-info'>
         <p>
           This content is neither created nor endorsed by Google.
-          <span className='footer-legal-link'>Report Abuse</span>- 
-          <span className='footer-legal-link'>Terms of Service</span>-
-          <span className='footer-legal-link'>Privacy Policy</span>
+          <a href='https://policies.google.com/terms' className='footer-legal-link'>Report Abuse</a> -
+          <a href='https://policies.google.com/terms' className='footer-legal-link'>Terms of Service</a> -
+          <a href='https://policies.google.com/privacy' className='footer-legal-link'>Privacy Policy</a>
         </p>
       </div>
 

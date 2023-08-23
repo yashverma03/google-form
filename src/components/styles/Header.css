@@ -16,6 +16,11 @@
   margin: 10px 0;
 }
 
+.header-email-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-email {
   color: rgb(108, 106, 106);
   font-weight: 700;
@@ -25,6 +30,10 @@
 .header-switch-account {
   color: #1a7be2;
   font-weight: 400;
+}
+
+.header-cloud-icon {
+  color: rgb(108, 106, 106);
 }
 
 .header-description {
