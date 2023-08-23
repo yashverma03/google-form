@@ -1,0 +1,27 @@
+.dropdown-container {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.dropdown-title {
+  font-size: 18px;
+}
+
+.dropdown-required {
+  color: red;
+}
+
+.dropdown-label {
+  font-size: 16px;
+  align-items: right;
+  text-align: right;
+}
+
+.dropdown-select {
+  width: 300px;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}

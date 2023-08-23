@@ -1,0 +1,38 @@
+.header-container {
+  margin: 20px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.header-divider {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.header-email {
+  color: rgb(108, 106, 106);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.header-switch-account {
+  color: #1a7be2;
+  font-weight: 400;
+}
+
+.header-description {
+  margin-top: 10px;
+  color: rgb(103, 102, 102);
+}
+
+.header-required {
+  margin-top: 10px;
+  color: red;
+}

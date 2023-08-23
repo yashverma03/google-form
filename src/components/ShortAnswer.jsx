@@ -1,15 +1,14 @@
 import { Input } from '@mui/material';
 import React from 'react';
+import './styles/ShortAnswer.css';
 
 const ShortAnswer = () => {
   return (
-    <div>
-      <div>
-        Short Answer <span> *</span>
+    <div className='short-answer-container'>
+      <div className='short-answer-title'>
+        Short Answer <span className='short-answer-required'> *</span>
       </div>
-      <div>
-        <Input placeholder="Your answer" />
-      </div>
+      <Input className='short-answer-input half' placeholder='Your answer' />
     </div>
   );
 };

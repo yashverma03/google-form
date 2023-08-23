@@ -1,0 +1,50 @@
+.multi-choice-grid-container {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.multi-choice-grid-title {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.multi-choice-grid-required {
+  color: red;
+}
+
+.multi-choice-grid-columns {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 200px;
+}
+
+.multi-choice-grid-column {
+  flex-basis: 130px;
+}
+
+.multi-choice-grid-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-choice-grid-row {
+  display: flex;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(245, 243, 243);
+  border-radius: 5px;
+}
+
+.multi-choice-grid-row-title {
+  margin-top: 15px;
+  margin-right: 70px;
+  margin-left: 10px;
+}
+
+.multi-choice-grid-row-options {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}

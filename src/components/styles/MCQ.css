@@ -1,0 +1,22 @@
+.mcq-container {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.mcq-title {
+  font-size: 18px;
+}
+
+.mcq-required {
+  color: red;
+}
+
+.mcq-options {
+  margin-top: 10px;
+}
+
+.mcq-option {
+  margin-top: 5px;
+}

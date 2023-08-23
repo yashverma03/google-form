@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import Header from './components/Header';
 import MCQ from './components/MCQ';
 import CheckBox from './components/CheckBox';
@@ -13,8 +14,8 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div>
-      <Header heading={"Assignment Task"} email={"super.assistant@gmail.com"} />
+    <div className='app'>
+      <Header />
       <MCQ />
       <CheckBox />
       <ShortAnswer />

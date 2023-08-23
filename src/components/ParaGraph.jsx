@@ -1,15 +1,14 @@
 import { Input } from '@mui/material';
 import React from 'react';
+import './styles/ShortAnswer.css';
 
 const ParaGraph = () => {
   return (
-    <div>
-      <div>
-        ParaGraph <span> *</span>
+    <div className='short-answer-container'>
+      <div className='short-answer-title'>
+        ParaGraph <span className='short-answer-required'> *</span>
       </div>
-      <div>
-        <Input placeholder="Your answer" />
-      </div>
+      <Input className='short-answer-input full' placeholder='Your answer' />
     </div>
   );
 };
