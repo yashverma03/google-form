@@ -8,6 +8,7 @@ const CheckBox = () => {
       <div className='mcq-title'>
         CheckBox<span className='mcq-required'> *</span>
       </div>
+
       <div className='mcq-options'>
         <FormGroup>
           <FormControlLabel className='mcq-option' control={<Checkbox />} label='Option 1' />

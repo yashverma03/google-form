@@ -1,39 +1,39 @@
-.multi-choice-grid-container {
+.grid-container {
   margin: 20px;
   padding: 30px;
   border-radius: 10px;
   background-color: white;
 }
 
-.multi-choice-grid-title {
+.grid-title {
   font-size: 18px;
   margin-bottom: 20px;
 }
 
-.multi-choice-grid-required {
+.grid-required {
   color: red;
 }
 
-.multi-choice-grid-columns {
+.grid-columns {
   display: flex;
   margin-top: 10px;
   margin-left: 50px;
   justify-content: flex-end;
 }
 
-.multi-choice-grid-column {
+.grid-column {
   flex-basis: 120px;
   padding: 5px;
   text-align: left;
 }
 
-.multi-choice-grid-rows {
+.grid-rows {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.multi-choice-grid-row {
+.grid-row {
   display: flex;
   margin-top: 10px;
   border: 1px #ccc;
@@ -43,12 +43,12 @@
   width: 100%;
 }
 
-.multi-choice-grid-row-title {
+.grid-row-title {
   margin-top: 15px;
   margin-right: 20px;
 }
 
-.multi-choice-grid-row-options {
+.grid-row-options {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 10px;

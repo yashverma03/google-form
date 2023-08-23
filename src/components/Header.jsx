@@ -5,7 +5,7 @@ import CloudDoneOutlinedIcon from '@mui/icons-material/CloudDoneOutlined';
 const Header = () => {
   return (
     <div className='header-container'>
-      <div className="rectangle" />
+      <div className='rectangle' />
       <h2 className='header-title'>Assignment Task</h2>
       <hr className='header-divider' />
 

@@ -27,7 +27,6 @@ const Footer = () => {
         </div>
       </div>
 
-
       <div className='footer-note'>
         <p>Never submit passwords through Google Forms.</p>
       </div>

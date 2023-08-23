@@ -8,6 +8,7 @@ const ShortAnswer = () => {
       <div className='short-answer-title'>
         Short Answer <span className='short-answer-required'> *</span>
       </div>
+      
       <Input className='short-answer-input half' placeholder='Your answer' />
     </div>
   );

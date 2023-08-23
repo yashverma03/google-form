@@ -8,6 +8,7 @@ const ParaGraph = () => {
       <div className='short-answer-title'>
         ParaGraph <span className='short-answer-required'> *</span>
       </div>
+      
       <Input className='short-answer-input full' placeholder='Your answer' />
     </div>
   );

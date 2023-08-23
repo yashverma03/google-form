@@ -8,6 +8,7 @@ const MCQ = () => {
       <div className='mcq-title'>
         MCQ<span className='mcq-required'> *</span>
       </div>
+      
       <div className='mcq-options'>
         <RadioGroup>
           <FormControlLabel className='mcq-option' value='Option1' control={<Radio />} label='Option 1' />
