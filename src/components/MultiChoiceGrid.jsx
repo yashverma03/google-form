@@ -4,8 +4,14 @@ import './styles/MultiChoiceGrid.css';
 
 const MultiChoiceGrid = () => {
   const radioStyle = {
-    paddingLeft: '60px'
+    alignItems: 'flex-end'
   };
+
+  const gridData = [
+    { rowTitle: 'Row 1', options: ['1', '2', '3'] },
+    { rowTitle: 'Row 2', options: ['1', '2', '3'] },
+    { rowTitle: 'Row 3', options: ['1', '2', '3'] }
+  ];
 
   return (
     <div className='multi-choice-grid-container'>
@@ -20,46 +26,22 @@ const MultiChoiceGrid = () => {
       </div>
 
       <div className='multi-choice-grid-rows'>
-        <div className='multi-choice-grid-row'>
-          <div className='multi-choice-grid-row-title'>Row 1</div>
-          <div className='multi-choice-grid-row-options' >
-            <FormControl >
-              <RadioGroup row>
-                <FormControlLabel sx={radioStyle} value='1' control={<Radio />} labelPlacement='top' />
-                <FormControlLabel sx={radioStyle} value='2' control={<Radio />} labelPlacement='top' />
-                <FormControlLabel sx={radioStyle} value='3' control={<Radio />} labelPlacement='top' />
-              </RadioGroup>
-            </FormControl>
+        {gridData.map((row, rowIndex) => (
+          <div className='multi-choice-grid-row' key={rowIndex}>
+            <div className='multi-choice-grid-row-title'>{row.rowTitle}</div>
+            <div className='multi-choice-grid-row-options'>
+              {row.options.map((option, optionIndex) => (
+                <FormControl key={optionIndex}>
+                  <RadioGroup row>
+                    <FormControlLabel sx={radioStyle} value={option} control={<Radio />} labelPlacement='top' />
+                  </RadioGroup>
+                </FormControl>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className='multi-choice-grid-row'>
-          <div className='multi-choice-grid-row-title'>Row 2</div>
-          <div className='multi-choice-grid-row-options'>
-            <FormControl>
-              <RadioGroup row>
-                <FormControlLabel sx={radioStyle} value='1' control={<Radio />} labelPlacement='top' />
-                <FormControlLabel sx={radioStyle} value='2' control={<Radio />} labelPlacement='top' />
-                <FormControlLabel sx={radioStyle} value='3' control={<Radio />} labelPlacement='top' />
-              </RadioGroup>
-            </FormControl>
-          </div>
-        </div>
-
-        <div className='multi-choice-grid-row'>
-          <div className='multi-choice-grid-row-title'>Row 3</div>
-          <div className='multi-choice-grid-row-options'>
-            <FormControl>
-              <RadioGroup row>
-                <FormControlLabel sx={radioStyle} value='1' control={<Radio />} labelPlacement='top' />
-                <FormControlLabel sx={radioStyle} value='2' control={<Radio />} labelPlacement='top' />
-                <FormControlLabel sx={radioStyle} value='3' control={<Radio />} labelPlacement='top' />
-              </RadioGroup>
-            </FormControl>
-          </div>
-        </div>
+        ))}
       </div>
-    </div >
+    </div>
   );
 };
 

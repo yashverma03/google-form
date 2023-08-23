@@ -7,7 +7,7 @@
 
 .multi-choice-grid-title {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .multi-choice-grid-required {
@@ -16,17 +16,21 @@
 
 .multi-choice-grid-columns {
   display: flex;
-  margin-bottom: 10px;
-  margin-left: 200px;
+  margin-top: 10px;
+  margin-left: 50px;
+  justify-content: flex-end;
 }
 
 .multi-choice-grid-column {
-  flex-basis: 130px;
+  flex-basis: 120px;
+  padding: 5px;
+  text-align: center;
 }
 
 .multi-choice-grid-rows {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .multi-choice-grid-row {
@@ -35,16 +39,21 @@
   border: 1px #ccc;
   background-color: #f8f9fa;
   border-radius: 5px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .multi-choice-grid-row-title {
   margin-top: 15px;
-  margin-right: 70px;
-  margin-left: 10px;
+  margin-right: 20px;
 }
 
 .multi-choice-grid-row-options {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 10px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }

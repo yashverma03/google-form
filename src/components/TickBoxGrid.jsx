@@ -4,13 +4,19 @@ import './styles/MultiChoiceGrid.css';
 
 const TickBoxGrid = () => {
   const checkBoxStyle = {
-    paddingLeft: '60px'
+    alignItems: 'flex-end'
   };
+
+  const gridData = [
+    { rowTitle: 'Row 1', options: ['1', '2', '3'] },
+    { rowTitle: 'Row 2', options: ['1', '2', '3'] },
+    { rowTitle: 'Row 3', options: ['1', '2', '3'] }
+  ];
 
   return (
     <div className='multi-choice-grid-container'>
       <div className='multi-choice-grid-title'>
-        Tick box Grid<span className='multi-choice-grid-required'> *</span>
+        Multi choice Grid<span className='multi-choice-grid-required'> *</span>
       </div>
 
       <div className='multi-choice-grid-columns'>
@@ -20,46 +26,22 @@ const TickBoxGrid = () => {
       </div>
 
       <div className='multi-choice-grid-rows'>
-        <div className='multi-choice-grid-row'>
-          <div className='multi-choice-grid-row-title'>Row 1</div>
-          <div className='multi-choice-grid-row-options' >
-            <FormControl >
-              <RadioGroup row>
-                <FormControlLabel sx={checkBoxStyle} value='1' control={<Checkbox />} labelPlacement='top' />
-                <FormControlLabel sx={checkBoxStyle} value='2' control={<Checkbox />} labelPlacement='top' />
-                <FormControlLabel sx={checkBoxStyle} value='3' control={<Checkbox />} labelPlacement='top' />
-              </RadioGroup>
-            </FormControl>
+        {gridData.map((row, rowIndex) => (
+          <div className='multi-choice-grid-row' key={rowIndex}>
+            <div className='multi-choice-grid-row-title'>{row.rowTitle}</div>
+            <div className='multi-choice-grid-row-options'>
+              {row.options.map((option, optionIndex) => (
+                <FormControl key={optionIndex}>
+                  <RadioGroup row>
+                    <FormControlLabel sx={checkBoxStyle} value={option} control={<Checkbox />} labelPlacement='top' />
+                  </RadioGroup>
+                </FormControl>
+              ))}
+            </div>
           </div>
-        </div>
-
-        <div className='multi-choice-grid-row'>
-          <div className='multi-choice-grid-row-title'>Row 2</div>
-          <div className='multi-choice-grid-row-options'>
-            <FormControl>
-              <RadioGroup row>
-                <FormControlLabel sx={checkBoxStyle} value='1' control={<Checkbox />} labelPlacement='top' />
-                <FormControlLabel sx={checkBoxStyle} value='2' control={<Checkbox />} labelPlacement='top' />
-                <FormControlLabel sx={checkBoxStyle} value='3' control={<Checkbox />} labelPlacement='top' />
-              </RadioGroup>
-            </FormControl>
-          </div>
-        </div>
-
-        <div className='multi-choice-grid-row'>
-          <div className='multi-choice-grid-row-title'>Row 3</div>
-          <div className='multi-choice-grid-row-options'>
-            <FormControl>
-              <RadioGroup row>
-                <FormControlLabel sx={checkBoxStyle} value='1' control={<Checkbox />} labelPlacement='top' />
-                <FormControlLabel sx={checkBoxStyle} value='2' control={<Checkbox />} labelPlacement='top' />
-                <FormControlLabel sx={checkBoxStyle} value='3' control={<Checkbox />} labelPlacement='top' />
-              </RadioGroup>
-            </FormControl>
-          </div>
-        </div>
+        ))}
       </div>
-    </div >
+    </div>
   );
 };
 
