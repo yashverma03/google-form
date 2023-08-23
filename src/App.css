@@ -1,0 +1,10 @@
+.app {
+  z-index: -1;
+  background-color: #f0ebf8;
+  align-items: center;
+  padding: 3px 20% 1px 20%;
+
+  @media (max-width: 800px) {
+    padding: 3px 10% 1px 10%;
+  }
+}

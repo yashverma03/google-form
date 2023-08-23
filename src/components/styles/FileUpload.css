@@ -1,0 +1,30 @@
+.file-upload-container {
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.file-upload-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.file-upload-required {
+  color: red;
+}
+
+.file-upload-button {
+  width: 130px;
+  height: 40px;
+  margin: -200px;
+}
+
+.file-upload-content {
+  display: flex;
+  align-items: center;
+}
+
+.file-upload-content p {
+  margin-left: 5px;
+}
